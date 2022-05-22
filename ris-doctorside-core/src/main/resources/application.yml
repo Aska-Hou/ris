@@ -1,0 +1,13 @@
+server:
+  port: 8082 # 服务端口
+
+spring:
+  profiles:
+    active: sit # 环境设置
+  application:
+    name: ris-core # 服务名
+
+mybatis-plus: #mybatis
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:edu/wku/ris/core/mapper/xml/*.xml

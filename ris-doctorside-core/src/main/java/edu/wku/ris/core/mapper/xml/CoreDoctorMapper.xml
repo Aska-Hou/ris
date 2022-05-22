@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.wku.ris.core.mapper.CoreDoctorMapper">
+
+    <select id="selectDoctorByEmailAndPassword" parameterType="edu.wku.ris.core.pojo.entity.CoreDoctor" resultType="edu.wku.ris.core.pojo.entity.CoreDoctor">
+        select * from core_doctor where email = #{email} and password = #{password}
+    </select>
+
+
+</mapper>
